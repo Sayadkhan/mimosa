@@ -4,7 +4,7 @@ import Button, { buttonVariants } from "../ui/Button";
 
 const Navbar = () => {
   return (
-    <header className="flex h-20 items-center border-b border-grey bg-white/80 ">
+    <header className="fixed top-0 left-0 right-0 z-[100] flex h-20 items-center border-b border-grey bg-white/80 backdrop-blur-lg">
       <div className="wrapper grid grid-cols-3 items-center gap-20">
         {/* LEFT NAV */}
         <nav>

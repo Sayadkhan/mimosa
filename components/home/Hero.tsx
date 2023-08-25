@@ -1,10 +1,15 @@
 import Image from "next/image";
 import React from "react";
+import { Playfair_Display } from "next/font/google";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+
+const plafairDisplay = Playfair_Display({ subsets: ["latin"] });
 
 const Hero = () => {
   return (
     <section className="wrapper section-padding h-[calc(100vh-5rem)]">
-      <div className="w-full h-full  grid grid-rows-8 gap-5 items-center">
+      <div className="w-full h-full  grid grid-rows-8 gap-5 items-center relative">
         {/* 1st row */}
         {/* <div className="w-full h-full"></div> */}
         {/* 2nd row */}
@@ -21,9 +26,7 @@ const Hero = () => {
           </div>
           {/* 2nd row right side */}
           <div className="w-full h-full flex items-center">
-            <h2 className="text-8xl uppercase font-semibold">
-              Lorem ipsum dolor
-            </h2>
+            <h2 className="headline-1 font-bold uppercase">Awaken Your</h2>
           </div>
         </div>
 
@@ -31,7 +34,11 @@ const Hero = () => {
         {/* 3rd row */}
         <div className="w-full h-[8rem]  grid grid-cols-[25%_auto_50%] gap-20">
           <div className="w-full h-full flex items-center">
-            <h2 className="text-8xl uppercase font-semibold ">Lorem</h2>
+            <h2
+              className={cn(plafairDisplay.className, "headline-1 lowercase")}
+            >
+              Inner
+            </h2>
           </div>
           <div className="w-full h-full overflow-hidden border rounded-[50px_0px_50px_50px]">
             <Image
@@ -43,7 +50,9 @@ const Hero = () => {
             />
           </div>
           <div className="w-full h-full flex items-center">
-            <h2 className="text-8xl uppercase font-semibold">Lorem ipsum</h2>
+            <h2 className="headline-1 font-bold uppercase">
+              Goddess<span className="text-green">.</span>
+            </h2>
           </div>
         </div>
 
@@ -51,7 +60,7 @@ const Hero = () => {
         {/* 4th row */}
         <div className="w-full h-[8rem] grid grid-cols-[40%_auto] gap-20">
           <div className="w-full h-full flex items-center">
-            <h2 className="text-8xl uppercase font-semibold">Lorem ips</h2>
+            <h2 className="headline-1 font-bold uppercase">Unveiling</h2>
           </div>
           <div className="w-full h-full overflow-hidden border rounded-[0px_50px_0px_50px]">
             <Image
@@ -77,8 +86,26 @@ const Hero = () => {
             />
           </div>
           <div className="w-full h-full flex items-center">
-            <h2 className="text-8xl uppercase font-semibold">
-              Lorem ips lorem
+            <h2 className="headline-1 font-bold uppercase">
+              <span
+                className={cn(
+                  plafairDisplay.className,
+                  "font-normal lowercase"
+                )}
+              >
+                With
+              </span>{" "}
+              M
+              <span
+                className={cn(
+                  plafairDisplay.className,
+                  "font-normal lowercase text-pink"
+                )}
+              >
+                i
+              </span>
+              mosa
+              <span className="text-orange">.</span>
             </h2>
           </div>
         </div>
@@ -86,6 +113,18 @@ const Hero = () => {
         <hr className="border-grey" />
         {/* 6th row */}
         {/* <div className="w-full h-full"></div> */}
+
+        {/* packages button */}
+        <Link
+          href="/#packages"
+          className="bg-dark/80 backdrop-blur-lg text-light w-40 h-40 rounded-full overflow-hidden flex justify-center items-center uppercase text-lg absolute left-[40%] bottom-[15%] z-[1] group shadow-2xl shadow-dark/50 hover:shadow-violet/50 eoq"
+        >
+          <p className="z-[3]">packages</p>
+          {/* filler */}
+          <span className="z-[2] absolute top-full left-0 right-0 bottom-0 w-full h-1/2 bg-violet/80  group-hover:top-1/2 eoq"></span>
+          {/* filler 2 */}
+          <span className="z-[2] absolute -top-full left-0 right-0 bottom-0 w-full h-1/2 bg-violet/80  group-hover:top-0 eoq"></span>
+        </Link>
       </div>
     </section>
   );
