@@ -1,10 +1,9 @@
 import Navbar from "@/components/shared/Navbar";
-import "./globals.css";
 import type { Metadata } from "next";
 import { Bai_Jamjuree } from "next/font/google";
-
+import "./globals.css";
+import Footer from "@/components/shared/Footer";
 import { cn } from "@/lib/utils";
-import Footer from "@/components/shared/footer";
 
 const baiJamjuree = Bai_Jamjuree({
   subsets: ["latin"],
@@ -13,7 +12,6 @@ const baiJamjuree = Bai_Jamjuree({
 
 export const metadata: Metadata = {
   title: "Mimosa | Home",
-  description: "",
 };
 
 export default function RootLayout({

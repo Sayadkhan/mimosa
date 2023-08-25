@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Button, { buttonVariants } from "../ui/Button";
 // import { buttonVariants } from "../ui/Button";
 
 const Navbar = () => {
   return (
-    <header className="fixed left-0 right-0 top-0 z-[100] flex h-20 items-center border-b border-grey bg-white/80 backdrop-blur-lg">
+    <header className="flex h-20 items-center border-b border-grey bg-white/80 ">
       <div className="wrapper grid grid-cols-3 items-center gap-20">
         {/* LEFT NAV */}
         <nav>
@@ -39,7 +40,7 @@ const Navbar = () => {
 
         {/* RIGHT NAV */}
         <nav>
-          <ul className="flex items-center justify-end gap-5">
+          <ul className="flex  justify-end gap-5 items-center">
             <li>
               <Link href="/" className="link-item">
                 Link 4
@@ -51,7 +52,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/user/sign-in">Sign in</Link>
+              <Link
+                href="/user/sign-in"
+                className={buttonVariants({ variant: "ocean" })}
+              >
+                Sign in
+              </Link>
             </li>
           </ul>
         </nav>
