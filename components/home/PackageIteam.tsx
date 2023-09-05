@@ -47,7 +47,10 @@ const PackageIteam: React.FC<PackageIteamProps> = ({
         <p className='text-dark/75'>{description.substring(0, 50)}...</p>
         <div className='flex items-center justify-between gap-2.5'>
           <p>{formatCurrency(price)}</p>
-          <Link href={`/packages/${id}`} className={buttonVariants()}>
+          <Link
+            href={`/packages/${id}`}
+            className={buttonVariants({ variant: 'violet' })}
+          >
             view details
           </Link>
         </div>
