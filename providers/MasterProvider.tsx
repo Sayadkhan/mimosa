@@ -11,6 +11,10 @@ import FooterMini from '@/components/shared/FooterMini';
 const MasterProvider = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
 
+  if ((children as ReactElement).props.childProp.segment.at(0) === 'notFound') {
+    return <>{children}</>;
+  }
+
   switch (pathname) {
     case '/':
       return (
@@ -21,7 +25,7 @@ const MasterProvider = ({ children }: { children: React.ReactNode }) => {
         </>
       );
     case '/user/sign-in':
-    case '/user/sign-in':
+    case '/user/sign-up':
       return (
         <>
           <NavbarMini />
