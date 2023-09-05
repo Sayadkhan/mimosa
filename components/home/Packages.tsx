@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionTitle from '../shared/SectionTitle';
-import HorizontailTab from '../shared/HorizontailTab';
+import HorizontailTab from '../ui/HorizontailTab';
 import { data } from '@/data/packages';
 import PackageIteam from './PackageIteam';
 
