@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
+        suppressHydrationWarning={true}
         className={cn(baiJamjuree.className, 'bg-light text-dark antialiased')}
       >
         {/* <Navbar /> */}

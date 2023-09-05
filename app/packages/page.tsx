@@ -1,6 +1,6 @@
-import AllPackages from '@/components/packages/AllPackages';
-import FooterMini from '@/components/shared/FooterMini';
-import Navbar from '@/components/shared/Navbar';
+import Packages from '@/components/packages/Packages';
+import FooterMini from '@/components/shared/footer/FooterMini';
+import Navbar from '@/components/shared/navbar/Navbar';
 import React from 'react';
 
 const PackagesPage = () => {
@@ -8,7 +8,7 @@ const PackagesPage = () => {
     <>
       <Navbar />
       <main>
-        <AllPackages />
+        <Packages formPackagePage />
       </main>
       <FooterMini />
     </>
