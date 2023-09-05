@@ -1,4 +1,7 @@
 import PackageDetailsSection from '@/components/package-details/PackageDetailsSection';
+import Footer from '@/components/shared/Footer';
+import FooterMini from '@/components/shared/FooterMini';
+import Navbar from '@/components/shared/Navbar';
 import { data } from '@/data/packages';
 import { PackageItem } from '@/types/packageItem';
 import React from 'react';
@@ -13,9 +16,13 @@ const PackageDetailsPage = ({ params }: { params: { id: string } }) => {
   }
 
   return (
-    <main>
-      <PackageDetailsSection packageItem={packageItem} />
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <PackageDetailsSection packageItem={packageItem} />
+      </main>
+      <FooterMini />
+    </>
   );
 };
 
