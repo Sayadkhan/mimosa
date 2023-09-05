@@ -35,7 +35,7 @@ const HorizontailTab: React.FC<HorizontailTabProps> = ({
             }}
             key={index}
             className={cn(
-              'h-["5rem] eoq flex w-[15rem] items-center justify-center whitespace-nowrap border border-grey px-6 py-3 text-center text-lg font-semibold tracking-widest',
+              'h-["5rem] eoq border-gray flex w-[15rem] items-center justify-center whitespace-nowrap border px-6 py-3 text-center text-lg font-semibold tracking-widest',
               index === 0 && 'rounded-bl-2xl',
               index === tabs.length - 1 && 'rounded-tr-2xl',
               shouldOpenTab === index && 'border-dark bg-dark text-light'

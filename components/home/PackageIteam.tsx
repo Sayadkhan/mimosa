@@ -25,7 +25,7 @@ const PackageIteam: React.FC<PackageIteamProps> = ({
     <div className='flex w-full flex-col gap-5'>
       {/* image */}
       <Link
-        className='group h-[15rem] w-full overflow-hidden rounded-2xl border border-grey'
+        className='border-gray group h-[15rem] w-full overflow-hidden rounded-2xl border'
         href={`/packages/${id}`}
       >
         <Image
@@ -38,7 +38,7 @@ const PackageIteam: React.FC<PackageIteamProps> = ({
         />
       </Link>
       {/* contant */}
-      <div className='eoq flex w-full flex-col gap-2.5 rounded-2xl border bg-grey/25 p-5 hover:bg-grey/50'>
+      <div className='eoq bg-gray/25 hover:bg-gray/50 flex w-full flex-col gap-2.5 rounded-2xl border p-5'>
         <span className='text-xs font-bold uppercase tracking-[0.375em] text-green'>
           {category}
         </span>

@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <hr className='border-grey' />
+        <hr className='border-gray' />
         {/* 3rd row */}
         <div className='grid h-[8rem]  w-full grid-cols-[25%_auto_50%] gap-20'>
           <div className='flex h-full w-full items-center'>
@@ -56,7 +56,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <hr className='border-grey' />
+        <hr className='border-gray' />
         {/* 4th row */}
         <div className='grid h-[8rem] w-full grid-cols-[40%_auto] gap-20 '>
           <div className='flex h-full w-full items-center'>
@@ -76,7 +76,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <hr className='border-grey' />
+        <hr className='border-gray' />
         {/* 5th row */}
         <div className='grid h-[8rem]  w-full grid-cols-[35%_auto] gap-20'>
           <div className='h-full w-full overflow-hidden rounded-[50px_50px_50px_0px] border'>
@@ -113,7 +113,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <hr className='border-grey' />
+        <hr className='border-gray' />
         {/* 6th row */}
         {/* <div className="w-full h-full"></div> */}
 
