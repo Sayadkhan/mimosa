@@ -39,6 +39,10 @@ main {
   @apply py-20;
 }
 
+.section-padding-2 {
+  @apply py-40;
+}
+
 /* typography */
 
 .headline-1 {
