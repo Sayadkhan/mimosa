@@ -1,5 +1,6 @@
 import Community from '@/components/home/Community';
 import CommunityGathered from '@/components/home/CommunityGathered';
+import Gallery from '@/components/home/Gallery';
 import Hero from '@/components/home/Hero';
 import Packages from '@/components/packages/Packages';
 import Products from '@/components/products/Products';
@@ -18,6 +19,7 @@ const HomePage = () => {
         <Products />
         <CommunityGathered />
         <Community />
+        <Gallery />
       </main>
       <Footer />
     </>
